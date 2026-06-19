@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.card1, .card2, .card3 {
+    position: relative; 
+    width: 30%;
+    margin-top: 8%;
+}
+
+
+.graphic, .digital, .ca {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    box-shadow: 5px 5px 15px black; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    transition: 0.5s ;
+}
+
+
+.card1 img, .card2 img, .card3 img {
+    width: 100%;
+    display: block;
+    position: relative; 
+    transition: 0.5s ;
+}
+
+
+h1 {
+
+    color: black;
+    margin-bottom: 5px;
+}
+
+p {
+   
+    color: black;
+}
+
+
+
+.card1:hover img, 
+.card2:hover img, 
+.card3:hover img {
+    transform: translate(-25px, -25px);
+}
+
+
+.card1:hover .graphic,
+.card2:hover .digital,
+.card3:hover .ca {
+    transform: translate(25px, 25px);
+}
