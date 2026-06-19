@@ -1,0 +1,78 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+}
+
+
+
+.d-flex{
+    height: 300px;
+    width: 400px;
+    box-shadow: black;
+    overflow: hidden;
+    position: relative; 
+}
+
+img{
+    height: 300px;
+    width: 400px;
+}
+
+.content{
+    width: 400px;
+    padding: 20px;
+    position: absolute;
+    bottom: 0px; 
+    height: 100px; 
+    background: white;
+    color: black;
+    transition: .5s;
+}
+
+h1{
+    font-size: 20px;
+}
+
+p{
+    margin-top: 15px;
+    transition: .5s;
+}
+.p .description{
+    margin-top: 15px;
+    transition: .5s;
+    opacity: 0;
+}
+
+hr {
+    margin-top: 10px;
+    opacity: 0;
+    transition: .5s;
+}
+
+.btn {
+    margin-top: 15px;
+    opacity: 0; 
+    transition: .5s;
+    color:#000360;
+}
+
+
+
+.d-flex:hover .content{
+    height: 300px; 
+}
+
+.d-flex:hover p,
+.d-flex:hover hr,
+.d-flex:hover .btn {
+    opacity: 1; 
+}
